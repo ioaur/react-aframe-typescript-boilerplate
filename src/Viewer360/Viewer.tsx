@@ -21,10 +21,8 @@ export class Viewer extends React.Component<{}, { isPlaying: boolean }> {
   }
 
   private playVideo = () => {
-    this.refs.loader2.show();
     this.refs.videoEntity.play();
     setTimeout((_) => {
-      this.refs.loader2.hide();
       this.playVideoDelay = 0;
     }, this.playVideoDelay);
   };

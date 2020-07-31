@@ -3,19 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "homepage": ".",
-  "description": "React, AFrame, Typescript demo integration",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/YagoLopez/react-aframe-typescript-boilerplate"
-  },
-  "bugs": {
-    "url": "https://github.com/YagoLopez/react-aframe-typescript-boilerplate/issues"
-  },
-  "author": {
-    "name": "Yago Lopez",
-    "email": "yago.lopez@gmail.com",
-    "url": "https://yagolopez.js.org"
-  },
   "license": "MIT",
   "dependencies": {
     "@types/node": "^9.4.0",
@@ -52,38 +39,6 @@
     "eject": "react-scripts-ts eject",
     "test": "jest test --env=jsdom",
     "test:watch": "jest --watch",
-    "test:debug": "jest --debug",
-    "coverage": "jest --no-cache --coverage",
-    "analyze": "source-map-explorer build/static/js/main.*"
-  },
-  "jest": {
-    "globals": {
-      "ts-jest": {
-        "tsConfigFile": "tsconfig.test.json"
-      }
-    },
-    "setupFiles": [
-      "<rootDir>/config/test-shim.js",
-      "<rootDir>/config/test-setup.js"
-    ],
-    "mapCoverage": true,
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest",
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/assetsTransformer.js",
-      "\\.(css|less)$": "<rootDir>/config/assetsTransformer.js"
-    },
-    "roots": [
-      "src"
-    ],
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.{tsx,ts}",
-      "!src/index.tsx"
-    ]
+    "test:debug": "jest --debug"
   }
 }
