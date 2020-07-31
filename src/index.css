@@ -1,6 +1,7 @@
-/* This class allows to show the "Enter VR" icon */
 a-scene {
-  position: absolute; height: 100% !important; width: 100% !important;
+  position: absolute;
+  height: 100% !important;
+  width: 100% !important;
 }
 
 .a-canvas {
@@ -8,6 +9,5 @@ a-scene {
 }
 
 body {
-  background-color: #e9e9e9
+  background-color: #e9e9e9;
 }
-

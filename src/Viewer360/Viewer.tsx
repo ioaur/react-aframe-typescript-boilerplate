@@ -1,7 +1,6 @@
 import * as React from "react";
 import Loader from "../components/Loader/Loader";
 import TopMenu from "../components/Menu/Buttons";
-import "./Viewer.css";
 
 export class Viewer extends React.Component<{}, { isPlaying: boolean }> {
   playVideoDelay = 2000;
@@ -42,7 +41,7 @@ export class Viewer extends React.Component<{}, { isPlaying: boolean }> {
         <Loader ref="loader2">Preparing 360 Video</Loader>
 
         <TopMenu>
-          <a onClick={this.playVideo} className="top-menu-item player-btn">
+          <a onClick={this.playVideo} className="top-menu-item ">
             Play
           </a>
           <a onClick={this.pauseVideo} className="top-menu-item player-btn">
